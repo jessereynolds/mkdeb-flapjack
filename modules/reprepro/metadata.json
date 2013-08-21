@@ -1,0 +1,33 @@
+{
+  "author": "jtopjian, saz, camptocamp",
+  "source": "git://github.com/jtopjian/puppet-reprepro.git",
+  "version": "0.5.0",
+  "dependencies": [
+    {
+      "version_requirement": ">=0.2.0",
+      "name": "ripienaar/concat"
+    }
+  ],
+  "summary": "Assists in the creation of reprepro-based repositories",
+  "project_page": "https://github.com/jtopjian/puppet-reprepro",
+  "description": "This module assists in the creation of reprepro-based debian-package repositories. It is compatible with both Debian and Ubuntu. Although this module has no dependencies itself, several modules are needed for a more practical deployment. Please see the README.md file for a full example. This module was based off of the exist module by saz (https://github.com/saz) and camptocamp (https://github.com/camptocamp)",
+  "types": [
+
+  ],
+  "checksums": {
+    "templates/distribution.erb": "aa3d7e84884178e38aa2e45b7fa81429",
+    "templates/update.erb": "aa974f3d98b0e47e5daae09649ac73f4",
+    "manifests/distribution.pp": "f974bd4062ecaa8f50e828143f0e2c5b",
+    "manifests/init.pp": "a95381399706eeaf66f97596ce740eb6",
+    "manifests/repository.pp": "90a15d27c9f861dd1370b3cb9bb59131",
+    "manifests/params.pp": "6dffc16370dd726b62b743ae675eaade",
+    "README.md": "d285cc4e79a83237c70fcc1b10b6f387",
+    "templates/filterlist.erb": "d2b7c15e7f37bf2c093989491d642499",
+    "templates/incoming.erb": "2f9a111e816bad1f5a1fb8009f47dd8e",
+    "manifests/update.pp": "5aa3b93266d896ba19da6364a6d8e6c5",
+    "manifests/filterlist.pp": "4eebf105931ffa73496ca62a179b7749",
+    "Modulefile": "f04ebfdbb2a92133ee98a80ec2c0f14e"
+  },
+  "license": "Apache 2.0",
+  "name": "jtopjian-reprepro"
+}
