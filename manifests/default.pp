@@ -27,7 +27,7 @@ reprepro::distribution { 'precise':
   architectures => 'amd64 i386',
   components    => 'main contrib non-free',
   description   => 'Package repository for flapjack',
-  sign_with     => 'F4D5DAA8',
+  sign_with     => '3BAB5407',
   not_automatic => 'No',
 }
 
