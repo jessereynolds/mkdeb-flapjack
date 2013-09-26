@@ -2,19 +2,24 @@
 $basedir = '/var/lib/apt/repo'
 
 package { 's3cmd':
-  ensure   => present,
+  ensure => present,
+}
+
+file { '/var/packages':
+  ensure => directory,
 }
 
 # Main reprepro class
-class { 'reprepro':
-  basedir => $basedir,
-}
+#class { 'reprepro':
+#  basedir => $basedir,
+#}
 
 # Set up a repository
 reprepro::repository { 'localpkgs':
   ensure  => present,
   basedir => $basedir,
   options => ['basedir .'],
+  require => File['/var/packages'],
 }
 
 # Create a distribution within that repository

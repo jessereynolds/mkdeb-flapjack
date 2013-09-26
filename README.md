@@ -1,10 +1,10 @@
-= mkdeb-flapjack
+# mkdeb-flapjack
 
 This is a vagrant vm definition with puppet provisioning to create a ubuntu system suitable for maintaining the flapjack debian package repository, and pushing it to s3 (packages.flapjack.io).
 
 This depends on [omnibus-flapjack](https://github.com/flpjck/omnibus-flapjack) to generate new packages.
 
-= commands
+# commands
 
 update deb package repository with a new flapjack package:
 
